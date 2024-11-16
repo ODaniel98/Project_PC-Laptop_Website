@@ -1,0 +1,1 @@
+a:5:{s:14:"felhasznalonev";s:5:"admin";s:6:"jelszo";s:60:"$2y$10$i1h8IE3LrsHUzMXknqrj7usR88BQ0z6WBwGtNOhq0cJyJqb8GvctO";s:7:"eletkor";s:2:"30";s:3:"nem";s:1:"F";s:6:"hobbik";a:5:{i:0;s:5:"sport";i:1;s:7:"főzés";i:2;s:6:"filmek";i:3;s:9:"rajzolás";i:4;s:12:"kirándulás";}}

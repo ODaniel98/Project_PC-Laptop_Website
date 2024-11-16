@@ -1,0 +1,805 @@
+/************************* Általános Formázás *************************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+
+}
+
+/************************* Header Formázása *************************/
+header{
+    background-color: black;        /*Fekete háttér*/
+    width: 100%;                    /*Az oldal teljes szélességét kitölti*/
+    padding: 20px;                  /*Vastagítja arányosan a fejlécet*/
+    z-index: 1000;                  /*Minden elemet lefed, ha rágördül*/
+    display: block;
+    position: fixed;
+    top: 0;
+}
+
+
+/************************* H(x)-ek Formázása *************************/
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    padding: 20px 20px;
+    color: white;
+    font-size: 1.7em;
+}
+
+#regh1{
+    color: white;
+}
+
+.latogatasok{
+    width: 50%;
+    height: 55px;
+    border-radius: 20px;
+    color: black;
+    background-color: #f5f5f5;
+    margin: auto;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+
+/************************* Táblázatok Formázása *************************/
+audio{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    animation: fadeIn ease-in-out 0.5s forwards;
+}
+
+tbody{
+    background-color: antiquewhite;
+}
+
+td, th{
+    border: black 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Home táblázat*/
+
+#home-body{
+    background: linear-gradient(to right, black, #d9a033);
+}
+
+/* Előtűnés */
+#pc-table{
+    opacity: 0;
+    animation: fadeIn ease-in-out 2s forwards;
+    width: 95%;
+}
+
+
+#laptop-table{
+    opacity: 0;
+    animation: fadeIn ease-in-out 3s forwards;
+    width: 95%;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+caption{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    width: 95%;
+}
+
+#pc-table-name{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#pc-table-name:hover{
+    color: red;
+}
+#laptopok-table-name{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#laptopok-table-name:hover{
+    color: blue;
+}
+
+
+.fejlec-pc{
+    font-weight: bold;
+    background-color: darkred;
+    color: white;
+}
+
+.fejlec-laptop{
+    font-weight: bold;
+    background-color: #00178b;
+    color: white;
+}
+
+.config-pc{
+    background-color: darkred;
+    color: white;
+}
+
+.config-laptop{
+    background-color: #00178b;
+    color: white;
+}
+
+video{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 3pc;
+    animation: fadeIn ease-in-out 3.5s forwards;
+}
+
+.Macbook-video{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 1.4em;
+    animation: fadeIn ease-in-out 4s forwards;
+}
+
+
+/************************* Asztali PC *************************/
+
+.pchatter{
+    background: linear-gradient(to right, black, red);
+}
+
+.asztalipc{
+    margin: 20px 0;
+    border:black solid 2px;
+    height: 240px;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#a1{
+    animation-delay: 0.25s;
+}
+
+#a2{
+    animation-delay: 0.5s;
+}
+#a3{
+    animation-delay: 0.75s;
+}
+#a4{
+    animation-delay: 1s;
+}
+#a5{
+    animation-delay: 1.25s;
+}
+#a6{
+    animation-delay: 1.5s;
+}
+#a7{
+    animation-delay: 1.75s;
+}
+
+.asztalipc img{
+    float: right;
+    margin-left: 10px;
+    position: absolute;
+    right: 25px;
+    transform: scale(0.75);
+    transition: 0.25s all;
+}
+.asztalipc img:hover{
+    transform: scale(1);
+}
+
+.asztalipc p{
+    text-align: center;
+    line-height: 1.3;
+}
+
+.pcar{
+    font-weight: bold;
+}
+.macpc{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+
+
+
+/************************* Laptopok *************************/
+
+.laptophatter{
+    background: linear-gradient(to right, #2a2a2a, #6e6eff);
+}
+.Laptopok{
+    margin: 20px 0;
+    border:black solid 2px;
+    height: 290px;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Laptopok img{
+    float: right;
+    margin-left: 10px;
+    position: absolute;
+    right: 25px;
+    transform: rotate(5deg);
+    transition: 0.25s all;
+
+}
+
+.Laptopok img:hover{
+    transform: rotate(0deg);
+    transition: 0.25s all;
+}
+
+.Laptopok p{
+    text-align: center;
+    line-height: 1.3;
+}
+
+.laptopar{
+    font-weight: bold;
+}
+#athuzottar{
+    text-decoration: line-through;
+}
+
+
+/************************* Regisztráció *************************/
+
+
+.reghatter{
+    background: linear-gradient(to right, #494949, #4dc944);
+}
+
+fieldset {
+    border: 2px solid gray;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    max-width: 1800px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nemek, .cpus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nemek span, .cpus span {
+    margin-right: 1rem;
+}
+
+.radio-group, .checkbox-group{
+    display: flex;
+    align-items: center;
+}
+
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="reset"] {
+    background-color: #e82323;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="reset"]:hover {
+    background-color: #8c0517;
+}
+
+#introduction{
+    width: 70%;
+    height: 150px;
+}
+
+.hiba-container{
+    display: flex;
+    justify-content: center;
+    background-color: darkred;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.hiba-szin{
+    color: white;
+}
+/************************* Bejelentkezés Formázása *************************/
+
+.bejelentkezes-hatter{
+    background: linear-gradient(to right, #000000, #c2a021);
+}
+
+#bejelentkezes{
+    color: red;
+}
+
+#login-form {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 70px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+#login-h1{
+    color: #333333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.loginlabel{
+    color: #666666;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+
+}
+
+#login-username, #login-password {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#login-submit{
+    background-color: #c2a021;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+#login-submit:hover{
+    background-color: #96790c;
+}
+
+#login-p{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+#login-p a{
+    color: #96790c
+}
+
+.login-msg{
+    color: red;
+    text-align: center;
+}
+
+.delete{
+    margin: auto;
+    padding-top: 20px;
+}
+.delete input[type="submit"] {
+    background-color: red;
+}
+
+/************************* Header Formázása szintén *************************/
+
+#header-nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#header-nav ul li {
+    flex-grow: 1;
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+#header-nav ul li a {
+    color: red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-nav ul li.home-active a {
+    color: white;
+}
+#header-nav ul li.home-inactive a {
+    color: orange;
+}
+#header-nav ul li.home-active a:hover {
+    color: orangered;
+}
+#header-nav ul li.home-inactive a:hover {
+    color: orangered;
+}
+
+#header-nav ul li.asztalipc-active a {
+    color: white;
+}
+#header-nav ul li.asztalipc-inactive a {
+    color: red;
+}
+#header-nav ul li.asztalipc-active a:hover {
+    color: darkred;
+}
+#header-nav ul li.asztalipc-inactive a:hover {
+    color: darkred;
+}
+
+#header-nav ul li.laptopok-active a {
+    color: white;
+}
+#header-nav ul li.laptopok-inactive a {
+    color: #6e6eff;
+}
+#header-nav ul li.laptopok-active a:hover {
+    color: #3232fc;
+}
+#header-nav ul li.laptopok-inactive a:hover {
+    color: #3232fc;
+}
+
+#header-nav ul li.regisztracio-active a {
+    color: white;
+}
+#header-nav ul li.regisztracio-inactive a {
+    color: #418625;
+}
+#header-nav ul li.regisztracio-active a:hover {
+    color: #224f10;
+}
+#header-nav ul li.regisztracio-inactive a:hover {
+    color: #224f10;
+}
+
+#header-nav ul li.bejelentkezes-active a {
+    color: white;
+}
+#header-nav ul li.bejelentkezes-inactive a {
+    color: #c2a021;
+}
+#header-nav ul li.bejelentkezes-active a:hover {
+    color: #96790c;
+}
+#header-nav ul li.bejelentkezes-inactive a:hover {
+    color: #96790c;
+}
+#header-nav ul li.profile-active a {
+    color: white;
+}
+#header-nav ul li.profile-inactive a {
+    color: #008080;
+}
+#header-nav ul li.profile-active a:hover {
+    color: #7BC2BC;
+}
+#header-nav ul li.profile-inactive a:hover {
+    color: #7BC2BC;
+}
+#header-nav ul li.listUsers-active a {
+    color: white;
+}
+#header-nav ul li.listUsers-inactive a {
+    color: #dba37d;
+}
+#header-nav ul li.listUsers-active a:hover {
+    color: rgba(219, 163, 125, 0.41);
+}
+#header-nav ul li.listUsers-inactive a:hover {
+    color: rgba(219, 163, 125, 0.34);
+}
+#header-nav ul li.kosar-active a {
+    color: white;
+}
+#header-nav ul li.kosar-inactive a {
+    color: rgba(194, 160, 33, 0.72);
+}
+#header-nav ul li.kosar-active a:hover {
+    color: rgba(194, 160, 33, 0.45);
+}
+#header-nav ul li.kosar-inactive a:hover {
+    color: rgba(194, 160, 33, 0.45);
+}
+
+
+/************************* Profile Formázása *************************/
+
+.profile-body {
+    background-color: rgb(0, 128, 128);
+    text-align: center;
+}
+
+.profile-h1{
+    margin-top: 70px;
+}
+
+.profile-data{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+}
+
+.profile-data h2{
+    color: black;
+}
+
+.profile-picture-div{
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    width: 70%;
+}
+
+
+.profile-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.profile-input-file {
+    margin-bottom: 20px;
+}
+
+.profile-input-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile-input-submit:hover {
+    background-color: #3e8e41;
+}
+.profile-data p{
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+}
+
+
+/************************* Footer Formázása *************************/
+
+.container{
+    width: 100%;
+    height: 110px;
+    border: black 2px solid;
+    background-color: #363636;
+    color: antiquewhite;
+    margin-top: 20px;
+    clear: both;
+
+}
+.container div{
+    text-align: center;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    min-height: 50px;
+}
+.container p{
+    font-style: italic;
+    text-shadow: 1px 3px 3px green;
+}
+.container span{
+    font-size: 1.3em;
+}
+p::selection{
+    background-color: black;
+}
+#velemeny::after{
+    content:" - Idezet vege";
+}
+
+#login-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.users-h1{
+    color: white;
+    background-color: gray;
+    margin-top: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+.users-div{
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-content: space-between;
+}
+.users-h1-own{
+    color: #7eef32;
+    background-color: gray;
+    margin-top: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+.users-h2-own{
+    color: #7eef32;
+}
+.users-div-own{
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: green;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-content: space-between;
+}
+.users-div input[type="submit"]{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    background-color: red;
+}
+.userlist-body{
+    background-color: #dba37d;
+}
+.userlist-h1{
+    color: black;
+}
+
+.ertekeles-button{
+    margin: auto;
+    justify-content: center;
+    display: block;
+}
+.rating-submit input[type="submit"]{
+    padding: 0px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px auto;
+}
+.rating{
+    justify-content: center;
+    display: block;
+    width: 40%;
+}
+
+/************************* Kosár *************************/
+
+.kosarhatter{
+    background-color: rgba(110, 95, 42, 0.72);
+}
+.kosarba-button{
+    margin: auto;
+    justify-content: center;
+}
+
+/************ Nyomtatási nézet ***************/
+@media print{
+    p { font-size: 12pt; }
+    video, audio { display: none; }
+    h1, h2{page-break-after: avoid;}
+    div{page-break-inside: avoid;}
+    footer {page-break-after: always;}
+
+
+}
+@page { margin: 0.5cm; }
